@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The web site of aaroneous</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+
+<header id="header">My new website!</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="new.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="other.html">Other</a>
+  <a href="index.html">Original home</a>
+</div>
+
+<div id="main">
+ <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+ 
+  <h1 id="h1">Welcome to my site!</h1>
+		<div class="index-p1">
+		  <p>I will update this site as I learn more about HTML.</p>
+		  <p>hopefully...</p>
+		  <p>I hope you like it! :-)</p>
+		  <p>(I threw some JQuery in, somewhere)</p>
+		  <p>Slowly learning more about web development</p>
+		  <p>as I get time to do so.</p>
+		</div>
+		<button title="Don't click this" id="butt" type="button" onclick="myfunction()"></button>
+		<footer id=footer onclick="touchy()"><p>2015 - aaroneous</p></footer>
+	</div>
+	
+<script src="test1.js"></script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>

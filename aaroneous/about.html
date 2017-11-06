@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+	<link href="style1.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title>About - aaroneous</title>
+</head>
+
+<body>
+	<header id="header" onclick="changeHeader()">My simple website.</header>
+	
+	<nav class="navbar">
+	  <button class="toggle">
+	    <span>Menu</span>
+	  </button>
+			<ul class="nav navbar-nav" id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="other.html">Other</a></li>
+			</ul>	
+	</nav>
+
+	<div id="main">
+		<h1 id="h1">About Me...</h1>
+		<div class="p1">
+		  <p>I got bored one day so I decided to make myself a website.</p>
+		  <p>I'm still learning this stuff.</p>
+		  <h2>I like cars, fast cars.</h2>
+		  <img src="mycar.png" alt="mycar" width="350">
+		  <p>This one was mine =(</p>
+		</div>  
+		
+	</div>
+	
+	 <footer onclick="touchy()"><p>2015 - aaroneous</p></footer> 
+	 
+	 <script src="test1.js"></script>
+	 <script>
+	  $(document).ready(function() {
+	    $("#h1").click(function() {
+	      $("#header").fadeOut(5000);
+	    });
+	  });
+	  
+	  $(document).ready(function() {
+	     $('.toggle').click(function() {
+	       $('#menu').slideToggle();
+	     });
+	  });
+	  </script>
+	  
+</body>
+</html>

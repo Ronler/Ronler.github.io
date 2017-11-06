@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href="/style1.css" rel="stylesheet" type="text/css">
+    <link href="/favicon.ico" rel="shortcut icon"  type="favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Home - aaroneous</title>
+  </head>
+  <body>
+  
+  <header id="header" onclick=changeColor()>My simple website.</header>
+  
+	<nav class="navbar">
+	  <button class="toggle">
+	    <span>Menu</span>
+	  </button>
+	 
+		<ul class="nav navbar-nav" id="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="other.html">Other</a></li>
+			<li><a href="new.html">Test page</a><li>
+		</ul>	
+	</nav>
+	
+
+	<div id="main">
+		<h1 id="h1">Welcome to my site!</h1>
+		<p>(I threw some JQuery in, somewhere)</p>
+		<div class="index-p1">
+		  <p>I will update this site as I learn more about HTML.</p>
+		  <p>hopefully...</p>
+		  <p>I hope you like it! :-)</p>
+		  <p>Slowly learning more about web development</p>
+		  <p>as I get time to do so.</p>
+		</div>
+		<button title="Don't click this" id="butt" type="button" onclick="myfunction()"></button>
+	</div>
+	
+	<footer onclick="touchy()"><p>2015 - aaroneous</p></footer>
+	
+	<script src="test1.js"></script>
+	<script>
+	  $(document).ready(function() {
+	     $('.toggle').click(function() {
+	       $('#menu').slideToggle();
+	     });
+	  });	    
+	</script>
+	
+  </body>
+</html>

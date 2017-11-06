@@ -1,0 +1,92 @@
+body {
+    background: url('/newbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 8px auto;
+}
+
+#header {
+	text-align: center;
+	font-size: 5em;
+	font-weight: 900;
+	color: #FAFAFA;
+}
+
+#main {
+    transition: margin-left .5s;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+span {
+  color: #79cdcd;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #79CDCD;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #79CDCD;
+}
+
+h1 {
+  margin: 2px;
+  color: #FAFAFA;
+}
+
+h2 {
+  margin: 8px;
+}
+
+.p1 {
+  margin: 5px auto;
+}
+
+.index-p1 p{
+  margin: 10px auto;
+}
+
+.nooo {
+	text-align: center;
+	float: none;
+	margin: 0 auto;
+}
+
+#footer {
+  position: static;
+  color: #79cdcd;
+}
+
+@media screen and (max-width: 730) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 40px;}
+}
+
